@@ -23,7 +23,7 @@ const Index = () => {
             
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            Exploding Reels helps you find 100+ top-performing Instagram reel ideas and shows you exactly how to recreate them for your brand.
+            Unloack a library of top-performing Instagram reel ideas and step to recreate them for your brand with Exploding Reels
           </p>
           <Button variant="hero" size="xl" className="animate-float">
             Browse the Library
