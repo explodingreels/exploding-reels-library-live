@@ -138,6 +138,83 @@ const Index = () => {
       videoUrl="https://vz-96460461-914.b-cdn.net/a6013cff-5d7c-4097-949e-85baa46e96b5/play_720p.mp4"
       autoplay={true}
     />
+   <ReelCard
+      title="Creative Transition"
+      views="1.7M views"
+      category="Creative"
+      videoUrl="https://vz-96460461-914.b-cdn.net/25c3f1af-bc10-4d0e-afeb-d38ba4fafcd4/play_720p.mp4"
+      autoplay={true}
+    />
+    <ReelCard
+      title="Lifestyle Moment"
+      views="3.1M views"
+      category="Lifestyle"
+      videoUrl="https://vz-96460461-914.b-cdn.net/8c16bf01-702a-40c1-9a90-7a8c68afbaeb/play_720p.mp4"
+      autoplay={true}
+    />
+    <ReelCard
+      title="Educational Content"
+      views="1.2M views"
+      category="Education"
+      videoUrl="https://vz-96460461-914.b-cdn.net/5cbc4739-1052-498f-bda1-839dd98c12a2/play_720p.mp4"
+      autoplay={true}
+    />
+    <ReelCard
+      title="Viral Dance Move"
+      views="5.4M views"
+      category="Entertainment"
+      videoUrl="https://vz-96460461-914.b-cdn.net/03693590-38ed-4e09-b793-17ef90f840b4/play_720p.mp4"
+      autoplay={true}
+    />
+    <ReelCard
+      title="Food Inspiration"
+      views="780K views"
+      category="Food"
+      videoUrl="https://vz-96460461-914.b-cdn.net/5b0771d4-1942-4bbe-bc48-685af52c0ca5/play_720p.mp4"
+      autoplay={true}
+    />
+    <ReelCard
+      title="Travel Aesthetic"
+      views="2.1M views"
+      category="Travel"
+      videoUrl="https://vz-96460461-914.b-cdn.net/ad3cd2fb-137c-4e8e-99ec-8a1c76b55437/play_720p.mp4"
+      autoplay={true}
+    />
+    <ReelCard
+      title="Tech Hack"
+      views="960K views"
+      category="Tech"
+      videoUrl="https://vz-96460461-914.b-cdn.net/48f7868f-43ca-4761-951e-4ec1f9ec893f/play_720p.mp4"
+      autoplay={true}
+    />
+    <ReelCard
+      title="Motivational Snippet"
+      views="1.5M views"
+      category="Motivation"
+      videoUrl="https://vz-96460461-914.b-cdn.net/6167a7b2-37d0-495e-9094-f6fcdc3817e0/play_720p.mp4"
+      autoplay={true}
+    />
+    <ReelCard
+      title="Comedy Skit"
+      views="4.7M views"
+      category="Comedy"
+      videoUrl="https://vz-96460461-914.b-cdn.net/cf007b9a-c33f-4877-afe8-c2e759358e2b/play_720p.mp4"
+      autoplay={true}
+    />
+    <ReelCard
+      title="Fitness Routine"
+      views="2.6M views"
+      category="Fitness"
+      videoUrl="https://vz-96460461-914.b-cdn.net/9d055a10-43e2-409e-96b7-ad28394433a1/play_720p.mp4"
+      autoplay={true}
+    />
+    <ReelCard
+      title="Pet Fun"
+      views="3.9M views"
+      category="Pets"
+      videoUrl="https://vz-96460461-914.b-cdn.net/a6013cff-5d7c-4097-949e-85baa46e96b5/play_720p.mp4"
+      autoplay={true}
+    />
   </div>
 </div>
 
