@@ -112,6 +112,21 @@
     box-shadow: var(--shadow-card), 0 20px 40px hsl(223 15% 6% / 0.6);
   }
 
+@layer utilities {
+  /* Scroll animation for desktop */
+  .animate-scroll-left {
+    animation: scroll-left 30s linear infinite;
+  }
+
+  /* Scroll animation for mobile: 1 card per 3s (10 cards → 30s), duplicate for looping */
+  @media (max-width: 768px) {
+    .animate-scroll-left-mobile {
+      animation: scroll-left 15s linear infinite;
+    }
+  }
+}
+
+
   /* Grid Layouts */
   .feature-grid {
     display: grid;
