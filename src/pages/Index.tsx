@@ -18,9 +18,9 @@ const Index = () => {
         
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <h1 className="font-satoshi font-black text-3xl md:text-5xl lg:text-8xl mb-8 leading-tight">
-             Find Instagram Reels {" "}
-            <span className="text-primary animate-glow"> Your Brand Need to Go Viral  </span>{" "} 
-      
+             Discover Reel Ideas to {" "}
+            <span className="text-primary animate-glow"> Go Viral  </span>{" "} 
+      On Instagram
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
             Learn from more than 150+ hand picked instagram reels from business across 10+ niches that went viral. So you can stop guessing and start making reels that works
@@ -233,7 +233,7 @@ const Index = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="font-satoshi font-black text-3xl md:text-4xl mb-6">
-              Filter Like a <span className="text-primary">Pro</span>
+              Reel Ideas for every <span className="text-primary">Niche, Usecase & Video Style </span>
             </h3>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               From faceless videos to meme hooks — find the exact reel type that matches your brand. Our advanced filtering system helps you discover content that converts.
@@ -266,27 +266,11 @@ const Index = () => {
           </div>
           <div className="order-1 lg:order-2">
             <h3 className="font-satoshi font-black text-3xl md:text-4xl mb-6">
-              Recreate in <span className="text-primary">Minutes</span>
+              Content Ideas Any Brand Can <span className="text-primary">Copy</span>
             </h3>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Every reel comes with a breakdown: what to shoot, how to edit, and why it works. Turn inspiration into action with detailed step-by-step guides.
             </p>
-            <div className="space-y-4">
-              {[
-                { icon: Target, title: "What to shoot", desc: "Camera angles, props, and setup details" },
-                { icon: Zap, title: "How to edit", desc: "Transitions, effects, and timing breakdowns" },
-                { icon: Star, title: "Why it works", desc: "Psychology and engagement principles" }
-              ].map((item, idx) => (
-                <div key={idx} className="flex items-start gap-4">
-                  <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
-                    <item.icon className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-satoshi font-bold text-lg">{item.title}</h4>
-                    <p className="text-muted-foreground">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </div>
