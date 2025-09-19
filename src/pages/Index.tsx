@@ -18,8 +18,8 @@ const Index = () => {
         
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <h1 className="font-satoshi font-black text-5xl md:text-7xl lg:text-8xl mb-8 leading-tight">
-            Steal Viral Reel Inspirations to .{" "}
-            <span className="text-primary animate-glow"> Explore Your Reach </span>{" "}
+            The Ultimate Viral Reels Database to .{" "}
+            <span className="text-primary animate-glow"> Blow Up  </span>{" "}
             on Instagram
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
