@@ -23,7 +23,7 @@ const Index = () => {
             That Go Viral
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            Unlock a library of top-performing Instagram reel ideas and step to recreate them for your brand with Exploding Reels
+            Learn from more than 150+ hand picked instagram reels from business across 10+ niches that went viral. So you can stop guessing and start making reels that works
           </p>
           <Button variant="hero" size="xl" className="animate-float">
             Get Exploding Reels
