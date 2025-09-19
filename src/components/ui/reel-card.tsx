@@ -7,11 +7,12 @@ interface ReelCardProps {
   category: string;
   thumbnail?: string;
   isHovered?: boolean;
+  autoplay?: boolean;
 }
 
-export const ReelCard = ({ title, views, category, thumbnail, isHovered }: ReelCardProps) => {
+export const ReelCard = ({ title, views, category, thumbnail, isHovered, autoplay }: ReelCardProps) => {
   return (
-    <Card className="group relative overflow-hidden bg-card border-border hover-lift cursor-pointer">
+    <Card className="group relative overflow-hidden bg-card border-border hover-lift cursor-pointer flex-shrink-0 w-[280px]">
       <div className="aspect-[9/16] bg-muted relative overflow-hidden">
         {thumbnail && (
           <img 
@@ -22,12 +23,21 @@ export const ReelCard = ({ title, views, category, thumbnail, isHovered }: ReelC
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
         
-        {/* Play button overlay */}
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        {/* Play button overlay - always visible for autoplay */}
+        <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${autoplay ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
           <div className="bg-primary/90 rounded-full p-4 animate-glow">
-            <Play className="w-6 h-6 text-primary-foreground fill-current" />
+            <Play className="w-6 h-6 text-primary-foreground fill-current animate-pulse" />
           </div>
         </div>
+
+        {/* Autoplay indicator */}
+        {autoplay && (
+          <div className="absolute top-4 right-4">
+            <div className="bg-red-500 text-white text-xs px-2 py-1 rounded-full animate-pulse">
+              LIVE
+            </div>
+          </div>
+        )}
 
         {/* Stats overlay */}
         <div className="absolute bottom-4 left-4 right-4">

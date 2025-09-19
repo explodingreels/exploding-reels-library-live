@@ -37,26 +37,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
-        <div className="feature-grid">
-          <FeatureCard
-            icon={Filter}
-            title="Filter by niche, use case, or video style"
-            description="Find the exact inspiration you need. From faceless videos to meme hooks — find the exact reel type that matches your brand."
-          />
-          <FeatureCard
-            icon={BookOpen}
-            title="Step-by-step breakdown"
-            description="Learn how to recreate every reel for your own brand. Every reel comes with a breakdown: what to shoot, how to edit, and why it works."
-          />
-          <FeatureCard
-            icon={Clock}
-            title="Save hours of scrolling"
-            description="Every reel in the library is handpicked and proven to perform. Stop wasting time chasing trends. Start creating reels that already work."
-          />
-        </div>
-      </section>
 
       {/* Reel Preview Section */}
       <section className="py-24 px-6 bg-card/30">
@@ -70,43 +50,95 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="reel-grid mb-12">
-            <ReelCard
-              title="Trending Fashion Hook"
-              views="2.3M views"
-              category="Fashion"
-              thumbnail={reelExamples}
-            />
-            <ReelCard
-              title="Business Growth Tip"
-              views="890K views"
-              category="Business"
-              thumbnail={reelExamples}
-            />
-            <ReelCard
-              title="Creative Transition"
-              views="1.7M views"
-              category="Creative"
-              thumbnail={reelExamples}
-            />
-            <ReelCard
-              title="Lifestyle Moment"
-              views="3.1M views"
-              category="Lifestyle"
-              thumbnail={reelExamples}
-            />
-            <ReelCard
-              title="Educational Content"
-              views="1.2M views"
-              category="Education"
-              thumbnail={reelExamples}
-            />
-            <ReelCard
-              title="Viral Dance Move"
-              views="5.4M views"
-              category="Entertainment"
-              thumbnail={reelExamples}
-            />
+          <div className="overflow-hidden mb-12">
+            <div className="flex gap-6 animate-scroll-left">
+              {/* First set of reels */}
+              <ReelCard
+                title="Trending Fashion Hook"
+                views="2.3M views"
+                category="Fashion"
+                thumbnail={reelExamples}
+                autoplay={true}
+              />
+              <ReelCard
+                title="Business Growth Tip"
+                views="890K views"
+                category="Business"
+                thumbnail={reelExamples}
+                autoplay={true}
+              />
+              <ReelCard
+                title="Creative Transition"
+                views="1.7M views"
+                category="Creative"
+                thumbnail={reelExamples}
+                autoplay={true}
+              />
+              <ReelCard
+                title="Lifestyle Moment"
+                views="3.1M views"
+                category="Lifestyle"
+                thumbnail={reelExamples}
+                autoplay={true}
+              />
+              <ReelCard
+                title="Educational Content"
+                views="1.2M views"
+                category="Education"
+                thumbnail={reelExamples}
+                autoplay={true}
+              />
+              <ReelCard
+                title="Viral Dance Move"
+                views="5.4M views"
+                category="Entertainment"
+                thumbnail={reelExamples}
+                autoplay={true}
+              />
+              {/* Duplicate set for seamless loop */}
+              <ReelCard
+                title="Trending Fashion Hook"
+                views="2.3M views"
+                category="Fashion"
+                thumbnail={reelExamples}
+                autoplay={true}
+              />
+              <ReelCard
+                title="Business Growth Tip"
+                views="890K views"
+                category="Business"
+                thumbnail={reelExamples}
+                autoplay={true}
+              />
+              <ReelCard
+                title="Creative Transition"
+                views="1.7M views"
+                category="Creative"
+                thumbnail={reelExamples}
+                autoplay={true}
+              />
+              <ReelCard
+                title="Lifestyle Moment"
+                views="3.1M views"
+                category="Lifestyle"
+                thumbnail={reelExamples}
+                autoplay={true}
+              />
+              <ReelCard
+                title="Educational Content"
+                views="1.2M views"
+                category="Education"
+                thumbnail={reelExamples}
+                autoplay={true}
+              />
+              <ReelCard
+                title="Viral Dance Move"
+                views="5.4M views"
+                category="Entertainment"
+                thumbnail={reelExamples}
+                autoplay={true}
+              />
+            </div>
           </div>
 
           <div className="text-center">
