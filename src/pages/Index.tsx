@@ -18,9 +18,9 @@ const Index = () => {
         
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <h1 className="font-satoshi font-black text-3xl md:text-5xl lg:text-8xl mb-8 leading-tight">
-             Discover {" "}
-            <span className="text-primary animate-glow"> Viral Reel Ideas  </span>{" "} 
-            for Your Brand
+             Create {" "}
+            <span className="text-primary animate-glow"> Instagram Reels  </span>{" "} 
+            That Go Viral
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
             Unlock a library of top-performing Instagram reel ideas and step to recreate them for your brand with Exploding Reels
