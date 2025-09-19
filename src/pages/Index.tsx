@@ -17,7 +17,7 @@ const Index = () => {
         <div className="hero-gradient absolute inset-0" />
         
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <h1 className="font-satoshi font-black text-5xl md:text-7xl lg:text-8xl mb-8 leading-tight">
+          <h1 className="font-satoshi font-black text-3xl md:text-5xl lg:text-8xl mb-8 leading-tight">
              Proven Reel Ideas to {" "}
             <span className="text-primary animate-glow"> Blow Up on Instagram  </span>{" "}
             
