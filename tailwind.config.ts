@@ -107,6 +107,7 @@ export default {
         "glow": "glow 2s ease-in-out infinite alternate",
         "float": "float 3s ease-in-out infinite",
         "scroll-left": "scroll-left 30s linear infinite",
+        "scroll-left-mobile": "scroll-left 15s linear infinite",
       },
     },
   },
