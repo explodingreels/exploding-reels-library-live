@@ -18,9 +18,9 @@ const Index = () => {
         
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <h1 className="font-satoshi font-black text-3xl md:text-5xl lg:text-8xl mb-8 leading-tight">
-             Create {" "}
-            <span className="text-primary animate-glow"> Instagram Reels  </span>{" "} 
-            That Go Viral
+             Find Instagram Reels {" "}
+            <span className="text-primary animate-glow"> Your Brand Need to Go Viral  </span>{" "} 
+      
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
             Learn from more than 150+ hand picked instagram reels from business across 10+ niches that went viral. So you can stop guessing and start making reels that works
