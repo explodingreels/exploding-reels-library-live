@@ -1,27 +1,46 @@
-import * as React from "react";
-import * as HoverCardPrimitive from "@radix-ui/react-hover-card";
+import { Card } from "@/components/ui/card";
+import { Eye, TrendingUp } from "lucide-react";
 
-import { cn } from "@/lib/utils";
+interface ReelCardProps {
+  title: string;
+  views: string;
+  category: string;
+  videoUrl?: string; // instead of thumbnail
+  autoplay?: boolean;
+}
 
-const HoverCard = HoverCardPrimitive.Root;
+export const ReelCard = ({ title, views, category, videoUrl, autoplay }: ReelCardProps) => {
+  return (
+    <Card className="group relative overflow-hidden bg-card border-border hover-lift cursor-pointer flex-shrink-0 w-[280px]">
+      <div className="aspect-[9/16] bg-muted relative overflow-hidden">
 
-const HoverCardTrigger = HoverCardPrimitive.Trigger;
+        {/* Video element */}
+        {videoUrl && (
+          <video
+            src={videoUrl}
+            className="object-cover w-full h-full"
+            muted
+            autoPlay={autoplay}
+            loop
+            playsInline
+          />
+        )}
 
-const HoverCardContent = React.forwardRef<
-  React.ElementRef<typeof HoverCardPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof HoverCardPrimitive.Content>
->(({ className, align = "center", sideOffset = 4, ...props }, ref) => (
-  <HoverCardPrimitive.Content
-    ref={ref}
-    align={align}
-    sideOffset={sideOffset}
-    className={cn(
-      "z-50 w-64 rounded-md border bg-popover p-4 text-popover-foreground shadow-md outline-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2",
-      className,
-    )}
-    {...props}
-  />
-));
-HoverCardContent.displayName = HoverCardPrimitive.Content.displayName;
+        {/* Dark gradient overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-export { HoverCard, HoverCardTrigger, HoverCardContent };
+        {/* Stats overlay */}
+        <div className="absolute bottom-4 left-4 right-4">
+          <div className="flex items-center gap-2 text-white text-sm">
+            <Eye className="w-4 h-4" />
+            <span>{views}</span>
+            <TrendingUp className="w-4 h-4 ml-2" />
+            <span className="bg-primary/20 px-2 py-1 rounded-full text-xs">
+              {category}
+            </span>
+          </div>
+        </div>
+      </div>
+    </Card>
+  );
+};
