@@ -141,13 +141,6 @@ const Index = () => {
   </div>
 </div>
 
-<div className="text-center">
-  <Button variant="outline" size="lg">
-    View Full Library
-    <ArrowRight className="w-5 h-5" />
-  </Button>
-</div>
-
           <div className="text-center">
             <Button variant="outline" size="lg">
               View Full Library
