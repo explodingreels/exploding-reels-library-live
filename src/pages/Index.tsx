@@ -13,11 +13,6 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <img 
-            src={heroImage} 
-            alt="Hero Background" 
-            className="w-full h-full object-cover"
-          />
         </div>
         <div className="hero-gradient absolute inset-0" />
         
