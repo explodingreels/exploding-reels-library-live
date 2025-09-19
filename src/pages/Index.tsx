@@ -266,7 +266,7 @@ const Index = () => {
 
   <div className="order-1 lg:order-2">
     <h3 className="font-satoshi font-black text-3xl md:text-4xl mb-6">
-      Content Ideas Any Brand Can <span className="text-primary">Copy</span>
+      Content Ideas Any Brand Can <span className="text-primary">Copy & Go Viral</span>
     </h3>
     <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
       Every reel comes with a breakdown: what to shoot, how to edit, and why it works. Turn inspiration into action with detailed step-by-step guides.
