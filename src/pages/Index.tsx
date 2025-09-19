@@ -23,10 +23,10 @@ const Index = () => {
             
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            Unloack a library of top-performing Instagram reel ideas and step to recreate them for your brand with Exploding Reels
+            Unlock a library of top-performing Instagram reel ideas and step to recreate them for your brand with Exploding Reels
           </p>
           <Button variant="hero" size="xl" className="animate-float">
-            Browse the Library
+            Get Exploding Reels
             <ArrowRight className="w-5 h-5" />
           </Button>
         </div>
@@ -38,10 +38,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-satoshi font-black text-4xl md:text-5xl mb-6">
-              See what's inside the library
+              150+ Viral Reel Ideas Waiting for You
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Every reel comes with detailed breakdowns showing you exactly how to recreate the magic.
+              Every reel idea comes with a detailed breakdown showing you exactly how to recreate the magic for your brand.
             </p>
           </div>
 
