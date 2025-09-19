@@ -106,7 +106,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "glow": "glow 2s ease-in-out infinite alternate",
         "float": "float 3s ease-in-out infinite",
-        "scroll-left": "scroll-left 10s linear infinite",
+        "scroll-left": "scroll-left 30s linear infinite",
       },
     },
   },
