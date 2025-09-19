@@ -1,43 +1,31 @@
 import { Card } from "@/components/ui/card";
-import { Play, Eye, TrendingUp } from "lucide-react";
+import { Eye, TrendingUp } from "lucide-react";
 
 interface ReelCardProps {
   title: string;
   views: string;
   category: string;
-  thumbnail?: string;
-  isHovered?: boolean;
+  videoUrl: string;
   autoplay?: boolean;
 }
 
-export const ReelCard = ({ title, views, category, thumbnail, isHovered, autoplay }: ReelCardProps) => {
+export const ReelCard = ({ title, views, category, videoUrl, autoplay }: ReelCardProps) => {
   return (
-    <Card className="group relative overflow-hidden bg-card border-border hover-lift cursor-pointer flex-shrink-0 w-[280px]">
-      <div className="aspect-[9/16] bg-muted relative overflow-hidden">
-        {thumbnail && (
-          <img 
-            src={thumbnail} 
-            alt={title}
-            className="object-cover w-full h-full"
-          />
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+    <Card className="relative overflow-hidden bg-card border-border flex-shrink-0 w-[280px]">
+      <div className="aspect-[9/16] bg-black relative overflow-hidden">
         
-        {/* Play button overlay - always visible for autoplay */}
-        <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${autoplay ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
-          <div className="bg-primary/90 rounded-full p-4 animate-glow">
-            <Play className="w-6 h-6 text-primary-foreground fill-current animate-pulse" />
-          </div>
-        </div>
+        {/* Video element */}
+        <video
+          src={videoUrl}
+          className="object-cover w-full h-full"
+          muted
+          autoPlay={autoplay}
+          loop
+          playsInline
+        />
 
-        {/* Autoplay indicator */}
-        {autoplay && (
-          <div className="absolute top-4 right-4">
-            <div className="bg-red-500 text-white text-xs px-2 py-1 rounded-full animate-pulse">
-              LIVE
-            </div>
-          </div>
-        )}
+        {/* Gradient for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
         {/* Stats overlay */}
         <div className="absolute bottom-4 left-4 right-4">
@@ -50,14 +38,6 @@ export const ReelCard = ({ title, views, category, thumbnail, isHovered, autopla
             </span>
           </div>
         </div>
-      </div>
-
-      {/* Hover content */}
-      <div className="p-4 absolute inset-x-0 bottom-0 bg-gradient-to-t from-card via-card/95 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-        <h3 className="font-satoshi font-bold text-sm mb-2">{title}</h3>
-        <p className="text-muted-foreground text-xs leading-relaxed">
-          Step-by-step breakdown: Learn how to recreate this reel for your own brand.
-        </p>
       </div>
     </Card>
   );
