@@ -18,9 +18,9 @@ const Index = () => {
         
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <h1 className="font-satoshi font-black text-3xl md:text-5xl lg:text-8xl mb-8 leading-tight">
-             Discover Reel Ideas to {" "}
-            <span className="text-primary animate-glow"> Go Viral  </span>{" "} 
-      On Instagram
+             Find Viral Reel Ideas for Your Brand {" "}
+            <span className="text-primary animate-glow"> In Seconds  </span>{" "} 
+  
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
             Learn from more than 150+ hand picked instagram reels from business across 10+ niches that went viral. So you can stop guessing and start making reels that works
@@ -236,7 +236,7 @@ const Index = () => {
               Reel Ideas for every <span className="text-primary">Niche, Usecase & Video Style </span>
             </h3>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              From faceless videos to meme hooks — find the exact reel type that matches your brand. Our advanced filtering system helps you discover content that converts.
+              From faceless videos to meme hooks — find the exact reel type that matches your brand. Our filtering system helps you discover content that fits your brand.
             </p>
             <div className="flex flex-wrap gap-3">
               {["Faceless", "Educational", "Behind-the-scenes", "Trending", "Product demos"].map((tag) => (
