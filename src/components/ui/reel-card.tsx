@@ -11,7 +11,7 @@ interface ReelCardProps {
 
 export const ReelCard = ({ title, views, category, videoUrl, autoplay }: ReelCardProps) => {
   return (
-    <Card className="relative overflow-hidden bg-card border-border flex-shrink-0 w-[280px]">
+    <Card className="relative overflow-hidden bg-card border-border flex-shrink-0 w-[200px] md:w-[280px]">
       <div className="aspect-[9/16] bg-black relative overflow-hidden">
         
         {/* Video element */}
