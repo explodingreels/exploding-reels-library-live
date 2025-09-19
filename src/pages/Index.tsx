@@ -46,7 +46,7 @@ const Index = () => {
           </div>
 
           <div className="overflow-hidden mb-12">
-  <div className="flex gap-6 animate-scroll-left">
+  <div className="flex gap-6 animate-scroll-left-mobile md:animate-scroll-left">
     <ReelCard
       title="Trending Fashion Hook"
       views="2.3M views"
